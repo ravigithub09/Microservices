@@ -14,7 +14,7 @@ public class LimitsServiceController {
 	
 	@GetMapping("/getLimit")
 	public Configuration retrieveLimits() {
-		return new Configuration(1,100);
+		return new Configuration(configuration.getMinimum(),configuration.getMaximum());
 	}
 	
 }
