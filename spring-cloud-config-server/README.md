@@ -1,4 +1,4 @@
-# Spring-Cloud-Config-Server
+# Spring-Cloud-Config-Server(Port: 8888)
 
  1. It is use to manage/handle centralized configuration among various small services.
  2. In this application we can use official Git location or you can download Git from https://git-scm.com/download/ url(Download as per your OS) and make local git repository to store the configuration files.
