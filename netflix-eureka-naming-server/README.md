@@ -11,8 +11,9 @@
 <b>Example:</b> Service A can ask details of running instance of Service B.<br/>
 
 # Feature
-Tow main feature of Naming server : 1. Service registration<br/>
-				                           	2. Service discovery
+Tow main feature of Naming server : <br/>
+1. Service registration<br/>
+2. Service discovery
                                 
 # How to work with Eureka Naming Server(Step-by-step)
 1. Create new project
