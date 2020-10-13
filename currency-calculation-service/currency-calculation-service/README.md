@@ -68,8 +68,8 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
    It is doing load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem <b>"Naming Server"</b> came into the picture.
    
  # Register with Eureka Naming Server
- 	1. "spring-cloud-starter-eureka" Add Dependency to pom.xml
-	```<dependency>
+ 	1. Add Dependency to pom.xml
+		```<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>```
