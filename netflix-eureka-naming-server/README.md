@@ -18,8 +18,8 @@ Tow main feature of Naming server : 1. Service registration<br/>
 1. Create new project
 2. Annotate bootstrap class with @EnableEurekaServer
 3. Open configuration file (application.properties)
-     i) spring.application.name= application_name
-     ii) server.port=8761
-     iii) eureka.client.register-with-eureka=false
-     iv) eureka.client.fetch-registry=false
+      1. spring.application.name= application_name     
+      2. server.port=8761
+      3. eureka.client.register-with-eureka=false
+      4. eureka.client.fetch-registry=false
 
