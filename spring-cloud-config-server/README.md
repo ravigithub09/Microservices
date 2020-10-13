@@ -42,7 +42,11 @@ and it’s profile environment <b>(spring.profiles.active=qa)</b>
 			    dev properties file<br/>
          <b> Note:</b> If we will not give any value to dev and qa properties files it will point to default file( ex: limit-service.properties)<br/>
          To get value from default properties file will access url like: http://localhost:8888/default
-         
+	 
+# Architecture 
+<p align="center">
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/spring-cloud-config-server/cloud-config-server.PNG" width="500" title="cloud-config-server">
+         </p>
 
 
 
