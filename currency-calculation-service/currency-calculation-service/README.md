@@ -9,6 +9,12 @@ In this service the fuctionality would be to take currency value from currency-e
 		CurrncyConversionBean currncyConversionBean = responseEntity.getBody();<br/>
     Now we can return this pojo "currncyConversionBean". But while doing the coding it would be bit complex and clumsy as well. So to reduce the code and make easy the code , calling services easily the <b>"Feign"</b> concept comes in picture.<br/>
     
+# Architecture Example
+<p align="center">
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/currency-calculation-service/currency-calculation-service/currency-conversion-service.PNG" width="500" title="currency-conversion-service">
+         </p>
+
+    
 # Feign concept
 
   1. Feign provides an abstraction over REST-based calls via annotation, by which microservices can use to communicate with each other without writing detailed REST client code.<br/>
@@ -37,6 +43,11 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 # Ribbon Concept
 1. To balance the load of service Ribbon concept comes into picture. which can balance the load among all the instances of a service.
 2. Ribbon concept we would use for distributing the load between multiple instances of a service. We will enable "Ribbon" using <b>@RibbonClient(Name = service-name)</b> at the proxy class from where you are calling another service.
+
+<p align="center">
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/currency-calculation-service/currency-calculation-service/Ribbon.PNG" width="500" title="ribbon">
+         </p>
+
 
 # Dependecy
 1. <b>We can add feign dependency from "spring-cloud-starter-netflix-ribbon" artifact and from "org.springframework.cloud" groupId.</b>
