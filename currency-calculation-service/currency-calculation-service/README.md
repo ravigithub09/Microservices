@@ -27,7 +27,7 @@ In this service the fuctionality would be to take currency value from currency-e
   1. 		```<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-		</dependency>```
+			</dependency>```
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
