@@ -31,4 +31,6 @@ Tow main feature of Naming server : <br/>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>```
+		
+<b>Note: Make sure before running all the services first run naming server after run all the services in sequence.</b>
 
