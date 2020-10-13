@@ -23,4 +23,5 @@ Tow main feature of Naming server : <br/>
       2. server.port=8761
       3. eureka.client.register-with-eureka=false
       4. eureka.client.fetch-registry=false
+ 4. Start the application
 
