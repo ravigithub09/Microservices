@@ -5,5 +5,5 @@
 
 # Architecture Example
 <p align="center">
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/currency-exchange-service/currency-exchange-service/currency-exchange-service.PNG" width="500" title="cloud-config-server">
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/currency-exchange-service/currency-exchange-service/currency-exchange-service.PNG" width="500" title="currency-exchange-service">
          </p>
