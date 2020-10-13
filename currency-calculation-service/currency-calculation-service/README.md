@@ -24,10 +24,10 @@ In this service the fuctionality would be to take currency value from currency-e
   5. It provides integration with ribbon which is use to client side load balancing framework.
   
   # Dependency
-  1. 		```<dependency>
+  		```<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-			</dependency>```
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>```	
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
@@ -53,7 +53,10 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 
 
 # Dependecy
-1. <b>We can add feign dependency from "spring-cloud-starter-netflix-ribbon" artifact and from "org.springframework.cloud" groupId.</b>
+		      ```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+			</dependency>```
  
 --> In Ribbon concept we can configure multiple instance of a service in application.properties like<br/>
      service-name(which service is running on multiple port).ribbon.listOfServers=instance1,instance2…..etc
