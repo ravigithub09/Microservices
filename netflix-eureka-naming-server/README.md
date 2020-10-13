@@ -25,4 +25,10 @@ Tow main feature of Naming server : <br/>
       4. eureka.client.fetch-registry=false
  4. Start the application
  5. Hit the url http://localhost:8761/  
+ 
+ # Add dependency
+ ```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>```
 
