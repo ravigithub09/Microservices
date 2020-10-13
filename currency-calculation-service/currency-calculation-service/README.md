@@ -27,7 +27,8 @@ In this service the fuctionality would be to take currency value from currency-e
   		```<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>```	
+		</dependency>```
+		
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
@@ -37,7 +38,6 @@ In this service the fuctionality would be to take currency value from currency-e
 public interface CurrencyConversionFeignProxyService {<br/>
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
 public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);
-}
 
 # Problem
 1. While calling services for multiple instance (multiple port) because of load balancing to that service we can pass one instance . 
@@ -61,7 +61,7 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 --> In Ribbon concept we can configure multiple instance of a service in application.properties like<br/>
      service-name(which service is running on multiple port).ribbon.listOfServers=instance1,instance2…..etc
      <b>Example:</b> currency-exchange-service.ribbon.listOfServers =  http://localhost:8000,http://localhost:8001,http://localhost:8002,http://localhost:8003<br/>
-          @FeignClient(name = "currency-exchange-service")
+     @FeignClient(name = "currency-exchange-service")
     @RibbonClient(name = "currency-exchange-service")
     public interface CurrencyConversionFeignProxyService {<br/>
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
