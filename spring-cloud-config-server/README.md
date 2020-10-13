@@ -45,7 +45,7 @@ and it’s profile environment <b>(spring.profiles.active=qa)</b>
 	 
 # Architecture 
 <p align="center">
-![alt text](https://github.com/ravigithub09/Microservices/blob/master/spring-cloud-config-server/cloud-config-server.PNG?raw=true)
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/spring-cloud-config-server/cloud-config-server.PNG" width="350" title="cloud-config-server">
          </p>
 
 
