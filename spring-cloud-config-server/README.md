@@ -44,8 +44,9 @@ and it’s profile environment <b>(spring.profiles.active=qa)</b>
          To get value from default properties file will access url like: http://localhost:8888/default
 	 
 # Architecture 
-![alt text](https://github.com/ravigithub09/Microservices/blob/master/spring-cloud-config-server/cloud-config-server.png?raw=true)
-         
+<p align="center">
+![alt text](https://github.com/ravigithub09/Microservices/blob/master/spring-cloud-config-server/cloud-config-server.PNG?raw=true)
+         </p>
 
 
 
