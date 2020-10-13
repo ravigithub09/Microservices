@@ -2,9 +2,8 @@
  It is an approach to developing a single application as a suite of small services,each running in it's own process and communicating with light weight mechanisms like HTTP resource API.
  These services are built around business capabilities and independently deployable by fully automated deployment machinery.
  Microservices arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
- <p align="center">	
-	
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG" width="500" title="microservices" >
+ <p align="center">
+		<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG" width="500" title="microservices" >
 	</p>
  
  # Microservices Architecture
