@@ -24,7 +24,10 @@ In this service the fuctionality would be to take currency value from currency-e
   5. It provides integration with ribbon which is use to client side load balancing framework.
   
   # Dependency
-  1. <b>We can add feign dependency from spring-cloud-starter-openfeign artifact and from org.springframework.cloud groupId.</b>
+  1. 		```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>```
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
