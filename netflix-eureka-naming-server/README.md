@@ -27,7 +27,7 @@ Tow main feature of Naming server : <br/>
  5. Hit the url http://localhost:8761/  
  
  # Add dependency
- ```<dependency>
+ 		```<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>```
