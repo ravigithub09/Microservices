@@ -8,6 +8,7 @@
  <br/>
  <p align="center">
 	![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/Microservice_Architecture.png?raw=true)
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/Microservice_Architecture.png" width="350" title="Microservices Architecture" >
 	</p>
  
  # Microservices Challenges
