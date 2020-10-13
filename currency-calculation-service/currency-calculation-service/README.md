@@ -24,7 +24,11 @@ In this service the fuctionality would be to take currency value from currency-e
   5. It provides integration with ribbon which is use to client side load balancing framework.
   
   # Dependency
-  1. <b>We can add feign dependency from spring-cloud-starter-openfeign artifact and from org.springframework.cloud groupId.</b>
+  		```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>```
+		
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
@@ -34,7 +38,6 @@ In this service the fuctionality would be to take currency value from currency-e
 public interface CurrencyConversionFeignProxyService {<br/>
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
 public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);
-}
 
 # Problem
 1. While calling services for multiple instance (multiple port) because of load balancing to that service we can pass one instance . 
@@ -50,12 +53,15 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 
 
 # Dependecy
-1. <b>We can add feign dependency from "spring-cloud-starter-netflix-ribbon" artifact and from "org.springframework.cloud" groupId.</b>
+		      ```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+			</dependency>```
  
 --> In Ribbon concept we can configure multiple instance of a service in application.properties like<br/>
      service-name(which service is running on multiple port).ribbon.listOfServers=instance1,instance2…..etc
      <b>Example:</b> currency-exchange-service.ribbon.listOfServers =  http://localhost:8000,http://localhost:8001,http://localhost:8002,http://localhost:8003<br/>
-          @FeignClient(name = "currency-exchange-service")
+     @FeignClient(name = "currency-exchange-service")
     @RibbonClient(name = "currency-exchange-service")
     public interface CurrencyConversionFeignProxyService {<br/>
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
@@ -66,5 +72,19 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
      
  # Problem With Ribbon
    It is doing load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem <b>"Naming Server"</b> came into the picture.
+   
+ # Register with Eureka Naming Server
+ 	1. Add Dependency to pom.xml
+		```<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>```
+		
+	2. Add @EnableDiscoveryClient annotation over the bootstrap class .
+	3. Configure Eruka server url in properties file of service which you want to register.<br/>
+		eureka.client.service-url.default-zone=http://localhost:8761/eureka
+
+
+	
      
 
