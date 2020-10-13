@@ -2,6 +2,9 @@
  It is an approach to developing a single application as a suite of small services,each running in it's own process and communicating with light weight mechanisms like HTTP resource API.
  These services are built around business capabilities and independently deployable by fully automated deployment machinery.
  Microservices arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
+ <p align="center">	
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.png" width="350" title="microservices" >
+	</p>
  
  # Microservices Architecture
  A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability.
@@ -31,3 +34,9 @@
 4. spring cloud Config server -> It is used to manage all the configuration of multiple microservices. It provides an approach where you can store configuration of all the services into the local git repository.
 
 **Dynamic scale up and down: Naming server(Eureka) use to register services ,Ribbon(Client side load balancing),Feign (Easier Rest client)
+
+# Ports
+1. On below port configuring all services
+	 <p align="center">	
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/ports.png" width="350" title="Service ports" >
+	</p>
