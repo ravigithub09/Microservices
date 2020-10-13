@@ -3,8 +3,8 @@
  These services are built around business capabilities and independently deployable by fully automated deployment machinery.
  Microservices arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
  <p align="center">	
-	![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.png?raw=true)
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG" width="350" title="microservices" >
+	
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG" width="500" title="microservices" >
 	</p>
  
  # Microservices Architecture
@@ -39,5 +39,5 @@
 # Ports
 1. On below port configuring all services
 	 <p align="center">	
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/ports.PNG" width="350" title="Service ports" >
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/ports.PNG" width="500" title="Service ports" >
 	</p>  
