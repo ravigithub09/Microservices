@@ -76,6 +76,11 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>```
+		
+	2. Add @EnableDiscoveryClient annotation over the bootstrap class .
+	3. Configure Eruka server url in properties file of service which you want to register.<br/>
+		eureka.client.service-url.default-zone=http://localhost:8761/eureka
+
 
 	
      
