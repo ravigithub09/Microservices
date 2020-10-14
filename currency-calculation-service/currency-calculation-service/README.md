@@ -85,6 +85,10 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 		eureka.client.service-url.default-zone=http://localhost:8761/eureka
 
 
-	
+# Remove registered Instance
+<b>Comment registered instance of services in application.properties</b>
+Ex: currency-exchange-service.ribbon.listOfServers =  http://localhost:8000, http://localhost:8001, http://localhost:8002, http://localhost:8003
+
+<b>Note:</b> Make sure before starting any application must start naming server first.
      
 
