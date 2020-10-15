@@ -5,7 +5,7 @@
     1. Application Name (EX: spring.application.name=Limit-Service).
     2. Port number (server.port:8080).<br/>
         Note: 8080 is a default port number for tomcat server in SpringBoot application.
-4.To read the properties file value from properties file we need one pojo java class with exactly variable what variable we have in properties file . Java class should be annotated with <b>@Component and @ConfigurationProperties </b>and we will send param/value whatever we are taking prefix in properties file.<br>
+4. To read the properties file value from properties file we need one pojo java class with exactly variable what variable we have in properties file . Java class should be annotated with <b>@Component and @ConfigurationProperties </b>and we will send param/value whatever we are taking prefix in properties file.<br>
   
   <b>Example :</b> 
 		@Component<br/>
@@ -17,6 +17,10 @@
 		properties file value<br/>		
 		limit-service.minimum = 99<br/>
 		limit-service.maximum =9999<br/>
+		
+<b>Note :</b> The file name inside the git foler of config server shuld be same as application name of service and @ConfigurationProperties param value will be same as prefix.property in properties file of config server.
+
+<b>Example:</b>limit-service.properties(file-name) and limit-services.minimum=3,limit-services.maximum=333(inside file)
     
 # To register Microservices with config server we have to do
  1. Rename application.properties (Example: abc.properties)
