@@ -7,12 +7,12 @@
  # Command and Steps to work with local git				
     1. Open git cmd/system cmd
     2. Go to some different directory , default it will point to user location (ex: C:\Users\ravis>f:)
-    3. create one folder here<br/>
-			        <b> F:\>mkdir git-local-repo </b>
-    4. Move to that directory<br/>
-			      <b>  F:\>cd git-local-repo</b>
-    5. Initialize git<br/>
-			        <b> F:\git-local-repo>git init</b><br />
+    3. create one folder here
+			         F:\>mkdir git-local-repo 
+    4. Move to that directory
+			       F:\>cd git-local-repo
+    5. Initialize git
+			         F:\git-local-repo>git init
 <b>Note:</b> After these above steps completed you will get this message <b>“Initialized empty Git repository in F:/git-local-repo/.git/”</b> means git has been initialized.<br/>
 <b>Add local repo folder to spring-cloud-config-server </b><br/>
 1. Right click on project-> build path-> configure build path-> source ->link source-> select local repo folder-> apply-> apply and close <b>(For Eclipse IDE)</b>
