@@ -3,6 +3,10 @@
 2. This service will communicate with another service to evalute the ammount from one form to another form.
 3. We have sql file to insert data manually into db<br/>
 
+<p align="center">
+	<img src="https://github.com/ravigithub09/Microservices/blob/master/currency-exchange-service/currency-exchange-service/two%20services%20commnication.PNG" width="500" title="Communicating two services">
+         </p>
+
 # H2 Database Configuration
 1. For test purpose i am using H2 db for that i need to comfigure some properties in config file(application.properties). As your choice you can use any db.<br/>
 
