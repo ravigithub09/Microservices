@@ -23,9 +23,11 @@
 <b>Example:</b>limit-service.properties(file-name) and limit-services.minimum=3,limit-services.maximum=333(inside file)
     
 # To register Microservices with config server we have to do
- 1. Rename application.properties (Example: abc.properties)
+ 1. Rename application.properties (Example: bootstrap.properties)
  2. Need to give config server uri in abc.properties<br/>
      <b>Example:</b> spring.cloud.config.uri = http://localhost:8888 (URI of config server)<br/>
+ 3. Configure profile<br/>
+     <b>Example:</b> spring.profiles.active=qa
     
  <b>Note:</b> 1. If value is not displaying perfectly check profile in services or key of properties file or @ConfigurationProperties param value.
               2. If we comment any properties key value it would pick up default value
