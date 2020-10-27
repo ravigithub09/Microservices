@@ -72,7 +72,13 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
      
  # Problem With Ribbon
    It is doing load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem <b>"Naming Server"</b> came into the picture.
-   
+ 
+ # Eureka Naming Server
+ 1. Eureka Naming server is nothing but a kind of server which comes from netflix where we can register all the microservice. It contains all info about registered service into that.
+ 2. There are two instances of Eureka naming server<br/>
+ 	1. <b>Service registration</b>
+	2. <b>Service Discovery</b>
+	
  # Register with Eureka Naming Server
  	1. Add Dependency to pom.xml
 		```<dependency>
