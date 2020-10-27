@@ -12,8 +12,8 @@
 
 # Feature
 Tow main feature of Naming server : <br/>
-1. Service registration<br/>
-2. Service discovery
+1. <b>Service Registration:</b> Whenever instance of microservices(ports) registered with naming server is called Service Registration.
+2. <b>Service Discovery:</b> Whenever any microservice wants to communicate with another service and it would ask details from naming server would be called Service Discovery.
                                 
 # How to work with Eureka Naming Server(Step-by-step)
 1. Create new project
