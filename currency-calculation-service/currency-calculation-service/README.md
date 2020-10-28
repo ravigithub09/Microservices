@@ -32,7 +32,7 @@ In this service the fuctionality would be to take currency value from currency-e
   
 # What it does?
   1. It will make easy to do call another service by making proxy interface.
-  2. It will use @FeignEnable(Service-Name which you want call , URI of service which you want to call)
+  2. It will use @FeignEnable(Service-Name which you want call , URI of service which you want to call)<br/>
   <b>Example:</b><br/>
 @FeignClient(name = "currency-exchange-service", url = "localhost:8001")<br/>
 public interface CurrencyConversionFeignProxyService {<br/>
@@ -59,10 +59,10 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 			</dependency>```
  
 --> In Ribbon concept we can configure multiple instance of a service in application.properties like<br/>
-     service-name(which service is running on multiple port).ribbon.listOfServers=instance1,instance2…..etc
+     service-name(which service is running on multiple port).ribbon.listOfServers=instance1,instance2…..etc<br/>
      <b>Example:</b> currency-exchange-service.ribbon.listOfServers =  http://localhost:8000,http://localhost:8001,http://localhost:8002,http://localhost:8003<br/>
-     @FeignClient(name = "currency-exchange-service")
-    @RibbonClient(name = "currency-exchange-service")
+     @FeignClient(name = "currency-exchange-service")<br/>
+    @RibbonClient(name = "currency-exchange-service")<br/>
     public interface CurrencyConversionFeignProxyService {<br/>
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
 public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);<br/>
@@ -92,8 +92,8 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 
 
 # Remove registered Instance
-<b>Comment registered instance of services in application.properties</b>
-Ex: currency-exchange-service.ribbon.listOfServers =  http://localhost:8000, http://localhost:8001, http://localhost:8002, http://localhost:8003
+<b>Comment registered instance of services in application.properties</b><br/>
+<b>Example:</b> currency-exchange-service.ribbon.listOfServers =  http://localhost:8000, http://localhost:8001, http://localhost:8002, http://localhost:8003
 
 <b>Note:</b> Make sure before starting any application must start naming server first.
      
