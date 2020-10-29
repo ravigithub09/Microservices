@@ -67,11 +67,11 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
 @GetMapping("/exchageService/from/{from}/to/{to}")<br/>
 public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);<br/>
 }<br/>     
-     <b>Note-></b> instance is nothing but on which port it is running.
-     **Make sure before running the proxy server first all the instance of another service if completely it will be in running mode then u can execute that service where               you did called all the instances of another service
+     <b>Note-></b> instance is nothing but on which port it is running.<br/>
+     **Make sure before running the proxy server first all the instance of another service if completely it will be in running mode then you can execute that service where               you did called all the instances of another service
      
  # Problem With Ribbon
-   It is doing load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem <b>"Naming Server"</b> came into the picture.
+   It is doing load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to do based on load dynamically increase or decrease the instances of a service. To overcome this problem <b>"Naming Server"</b> came into the picture.
  
  # Eureka Naming Server
  1. Eureka Naming server is nothing but a kind of server which comes from netflix where we can register all the microservices. It contains all info about registered service into that.
