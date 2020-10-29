@@ -76,7 +76,7 @@ public CurrncyConversionBean getExchangeValue(@PathVariable("from") String from,
  # Eureka Naming Server
  1. Eureka Naming server is nothing but a kind of server which comes from netflix where we can register all the microservices. It contains all info about registered service into that.
  2. There are two instances of Eureka naming server<br/>
- 	1. <b>Service registration</b>
+ 	1. <b>Service Registration</b>
 	2. <b>Service Discovery</b>
 	
  # Register with Eureka Naming Server
