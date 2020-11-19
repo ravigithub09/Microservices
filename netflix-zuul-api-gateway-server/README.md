@@ -1,7 +1,7 @@
 # ZUUL API Gateway (port: 8765)
 <b>It provides :</b><br/>
 1. Authentication, authorization and security
-2. Rate limit (For specific client wants to provide certain number of calls per day or per day)
+2. Rate limit (For specific client wants to provide certain number of calls per day or per hour)
 3. Fault tolerance (If some of the instance is down then able to provide some default response)
 4. Service aggregation (External client who wants to call some different services as part of the process.It’s better to aggregate all service and provide one services call for external consumer)
 # Microservices provides Zuul Api gateway.
