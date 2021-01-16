@@ -1,5 +1,5 @@
 # Eureka-Naming-Server(Port= 8761)
-   Naming server is used to load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem Naming server came into the picture.
+   Ribbon is used to load balancing b/w multiple instances(Nothing  but services are  running of different port) of a service and that multiple instance we have to configure in our configuration file every time whenever new instance would be created and that is not a good practice to disturb service configuration file every time.so i want to to based on load dynamically increase or decrease the instances of a service. To overcome this problem Naming server came into the picture.
    
    <p align="center">
   <img src="https://github.com/ravigithub09/Microservices/blob/master/netflix-eureka-naming-server/Eureka%20naming%20server.PNG" width="500" title="Eureka naming server">
@@ -32,5 +32,5 @@ Tow main feature of Naming server : <br/>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>```
 		
-<b>Note: Make sure before running all the services first run naming server after run all the services in sequence.</b>
+<b>Note: Make sure before running all the services first run naming server after run all the services in sequence.</b> 
 
