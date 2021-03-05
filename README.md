@@ -6,6 +6,9 @@
 	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/microservices.PNG" width="500" title="Microservices" ><br/>
 		<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG" width="600" title="Microservice instances" >
 	</p>
+	
+	![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/microservices.PNG?raw=true)
+	![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/multiple-services.PNG?raw=true)
  
  # Microservices Architecture
  A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability.
