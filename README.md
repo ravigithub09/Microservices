@@ -8,9 +8,8 @@
  # Microservices Architecture
  A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability.
  <br/>
- <p align="center">	
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/Microservice_Architecture.png" width="350" title="Microservices Architecture" >
-	</p>
+ ![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/Microservice_Architecture.png?raw=true)
+ 
  
  # Microservices Challenges
  1. Bounded context-> we are developing more number of services like 5 , 10, 20 and more than that service in one application. Then we have challenges like in which service what should we do or what we should not do.For this we need to do so many processes to give correct services.
@@ -36,9 +35,8 @@
 
 # Ports
 1. On below port configuring all services
-	 <p align="center">	
-	<img src="https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/ports.PNG" width="500" title="Service ports" >
-	</p>  
+	
+	![alt text](https://github.com/ravigithub09/Microservices/blob/master/limit-service/img/ports.PNG?raw=true)
 	
 # Reference 
  https://www.udemy.com/course/microservices-with-spring-boot-and-spring-cloud
